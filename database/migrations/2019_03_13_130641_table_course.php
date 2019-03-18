@@ -18,8 +18,9 @@ class TableCourse extends Migration
             $table->string('Course_Name');
             $table->string('Description');
             $table->integer('Term');
-            $table->string('Level_ID')->unsigned();
+            $table->string('Level_ID');
             $table->primary('Course_ID');
+            $table->foreign('Level_ID')->references('Level_ID')->on('level');
             //$table->foreign('Level_ID')->references('Level_ID')->on('level');
         });
     }

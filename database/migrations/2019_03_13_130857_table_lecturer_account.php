@@ -18,6 +18,7 @@ class TableLecturerAccount extends Migration
             $table->string('Password');
             $table->string('Lecturer_ID');
             $table->primary('User_Name');
+            $table->foreign('Lecturer_ID')->references('Lecturer_ID')->on('lecturer');
         });
     }
 

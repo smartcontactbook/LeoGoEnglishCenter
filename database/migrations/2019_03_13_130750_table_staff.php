@@ -21,7 +21,7 @@ class TableStaff extends Migration
             $table->string('Email');
             $table->string('Birth_Day');
             $table->string('Phone_Number');
-            $table->tinyint('Gender');
+            $table->integer('Gender');
             $table->string('Address');
             $table->primary('Staff_ID');
         });
