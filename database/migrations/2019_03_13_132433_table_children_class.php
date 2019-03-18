@@ -18,6 +18,8 @@ class TableChildrenClass extends Migration
             $table->string('Children_ID');
             $table->string('Class_ID');
             $table->primary('Children_Class_ID');
+            $table->foreign('Children_ID')->references('Children_ID')->on('children');
+            $table->foreign('Class_ID')->references('Class_ID')->on('class');
         });
     }
 

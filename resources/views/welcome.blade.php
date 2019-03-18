@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="{{ asset('css/bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bower_components/font-awesome/css/font-awesome.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bower_components/Ionicons/css/ionicons.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/dist/css/AdminLTE.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/dist/css/skins/_all-skins.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bower_components/morris.js/morris.css') }}">
@@ -29,7 +30,6 @@
         <script>
             $.widget.bridge('uibutton', $.ui.button);
         </script>
-        
         <script src="{{ asset('js/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/bower_components/raphael/raphael.min.js') }}"></script>
         <script src="{{ asset('js/bower_components/morris.js/morris.min.js') }}"></script>
@@ -46,5 +46,9 @@
         <script src="{{ asset('js/dist/js/adminlte.min.js') }}"></script>
         <script src="{{ asset('js/dist/js/pages/dashboard.js') }}"></script>
         <script src="{{ asset('js/dist/js/demo.js') }}"></script>
+        <script src="{{ asset('js/bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('js/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
+
     </body>
 </html>
+    

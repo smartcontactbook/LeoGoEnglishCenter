@@ -18,6 +18,7 @@ class TableLesson extends Migration
             $table->string('Lesson_Name');
             $table->string('Course_ID');
             $table->primary('Lesson_ID');
+            $table->foreign('Course_ID')->references('Course_ID')->on('course');
         });
     }
 

@@ -18,6 +18,7 @@ class TableOption extends Migration
             $table->string('Option');
             $table->string('Question_ID');
             $table->primary('Options_ID');
+            $table->foreign('Question_ID')->references('Question_ID')->on('question');
         });
     }
 

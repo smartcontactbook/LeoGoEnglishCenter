@@ -17,6 +17,7 @@ class TableAnswer extends Migration
             $table->string('Answer_ID');
             $table->string('Question_ID');
             $table->primary('Answer_ID');
+            $table->foreign('Question_ID')->references('Question_ID')->on('question');
         });
     }
 

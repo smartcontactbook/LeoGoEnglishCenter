@@ -22,6 +22,9 @@ class TablePayment extends Migration
             $table->string('Class_ID');
             $table->string('Status');
             $table->primary('Payment_ID');
+            $table->foreign('Payment_Method_ID')->references('Payment_Method_ID')->on('payment_method');
+            $table->foreign('Children_ID')->references('Children_ID')->on('children');
+            $table->foreign('Class_ID')->references('Class_ID')->on('class');
         });
     }
 

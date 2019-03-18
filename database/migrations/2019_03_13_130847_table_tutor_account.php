@@ -18,6 +18,7 @@ class TableTutorAccount extends Migration
             $table->string('Password');
             $table->string('Tutor_ID');
             $table->primary('User_Name');
+            $table->foreign('Tutor_ID')->references('Tutor_ID')->on('tutor');
         });
     }
 
