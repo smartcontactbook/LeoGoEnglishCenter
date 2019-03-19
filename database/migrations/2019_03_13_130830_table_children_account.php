@@ -18,6 +18,7 @@ class TableChildrenAccount extends Migration
             $table->string('Password');
             $table->string('Children_ID');
             $table->primary('User_Name');
+            $table->foreign('Children_ID')->references('Children_ID')->on('children');
         });
     }
 

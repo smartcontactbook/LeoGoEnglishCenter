@@ -19,13 +19,15 @@ class TableQuiz extends Migration
             $table->integer('Correct');
             $table->integer('Wrong');
             $table->integer('Total');
-            $table->bigint('Time_Test');
+            $table->integer('Time_Test');
             $table->text('Intro');
             $table->string('Tag');
             $table->date('Date_Test');
             $table->string('Tutor_ID');
             $table->string('Lesson_ID');
             $table->primary('Quiz_ID');
+            $table->foreign('Tutor_ID')->references('Tutor_ID')->on('tutor');
+            $table->foreign('Lesson_ID')->references('Lesson_ID')->on('lesson');
         });
     }
 

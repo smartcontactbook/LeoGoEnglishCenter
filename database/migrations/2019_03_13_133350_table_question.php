@@ -19,6 +19,7 @@ class TableQuestion extends Migration
             $table->string('Quiz_ID');
             $table->integer('Choice');
             $table->primary('Question_ID');
+            $table->foreign('Quiz_ID')->references('Quiz_ID')->on('quiz');
         });
     }
 

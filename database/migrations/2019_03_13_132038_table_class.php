@@ -22,7 +22,12 @@ class TableClass extends Migration
             $table->string('Lecturer_ID');
             $table->string('Tutor_ID');
             $table->string('Course_ID');
+            $table->time('Time_Start');
+            $table->time('Time_end');
             $table->primary('Class_ID');
+            $table->foreign('Lecturer_ID')->references('Lecturer_ID')->on('lecturer');
+            $table->foreign('Tutor_ID')->references('Tutor_ID')->on('tutor');
+            $table->foreign('Course_ID')->references('Course_ID')->on('course');
         });
     }
 
