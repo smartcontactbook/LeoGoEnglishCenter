@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter , Link} from 'react-router-dom';
-<<<<<<< HEAD
 import Master from './Master';
-=======
-import masterUser from './managementUser/masterUser';
->>>>>>> 1e094962a442326066bb06d65333e8c9e862334b
 
 export default class Example extends Component {
     render() {
@@ -384,11 +380,7 @@ export default class Example extends Component {
                   <ul className="treeview-menu">
                   <li>
                   <i className="fa fa-circle-o">
-<<<<<<< HEAD
                   </i><Link className="nav-link js-scroll-trigger" to='/lecturer'>lecturer</Link>
-=======
-                  </i>
->>>>>>> 1e094962a442326066bb06d65333e8c9e862334b
                   </li>
                   <li>
                   <a href="pages/charts/morris.html">
@@ -721,25 +713,14 @@ export default class Example extends Component {
                   </ul>
                 </section>
               </aside>
-<<<<<<< HEAD
               <div className="content-wrapper"><Master/></div>
             </HashRouter>
-=======
-              <div class="content-wrapper">
-                {this.props.children}
-              </div>
-        </HashRouter>
->>>>>>> 1e094962a442326066bb06d65333e8c9e862334b
         );
     }
 }
 
 if (document.getElementById('master')) {
-<<<<<<< HEAD
   ReactDOM.render(
     <Example/>,
     document.getElementById('master'));
-=======
-    ReactDOM.render(<Example />, document.getElementById('master'));
->>>>>>> 1e094962a442326066bb06d65333e8c9e862334b
 }
